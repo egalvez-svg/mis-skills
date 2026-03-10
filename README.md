@@ -1,6 +1,6 @@
 # Agent Skills Repository
 
-Este repositorio contiene skills para agentes de IA compatibles con el CLI `vercel-labs/skills`.
+Este repositorio contiene skills para extender las capacidades de agentes de IA en el desarrollo y migración de código.
 
 ## Skills Disponibles
 
