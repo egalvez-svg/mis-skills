@@ -18,3 +18,7 @@ npx skills add egalvez-svg/mis-skills --skill yii2-to-prisma
 ```
 
 Sigue las instrucciones en pantalla para seleccionar tu agente (Antigravity, Cursor, Cline, etc.).
+
+## Licencia
+
+Este proyecto está bajo la [Licencia MIT](./LICENSE). Creado por Eduardo Galvez.
