@@ -14,7 +14,7 @@ Transforma consultas de Yii2 Active Record y Query Builder a sintaxis de Prisma 
 Para instalar este skill en tu proyecto o editor, usa el CLI de `skills`:
 
 ```bash
-npx skills add <URL_DE_ESTE_REPO> --skill yii2-to-prisma
+npx skills add egalvez-svg/mis-skills --skill yii2-to-prisma
 ```
 
 Sigue las instrucciones en pantalla para seleccionar tu agente (Antigravity, Cursor, Cline, etc.).
