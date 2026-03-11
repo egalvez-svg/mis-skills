@@ -1,6 +1,12 @@
-# Skill: Yii2 Model to Prisma Schema
+---
+name: yii2-model-to-prisma
+description: Transforms Yii2 ActiveRecord models into Prisma Schema definitions.
+author: Eduardo Galvez
+---
 
-This skill provides rules and examples for transforming Yii2 PHP models (`ActiveRecord`) directly into Prisma model definitions (`schema.prisma`) for NestJS projects.
+# Yii2 Model to Prisma Schema Skill
+
+This skill provides rules for transforming Yii2 PHP models (`ActiveRecord`) directly into Prisma model definitions (`schema.prisma`) for NestJS projects.
 
 ## Transformation Rules
 
@@ -23,43 +29,7 @@ This skill provides rules and examples for transforming Yii2 PHP models (`Active
 - `default` -> Add `@default(value)`.
 
 ### 4. Relationships
-- **hasOne**: 
-  ```prisma
-  profile Profile?
-  ```
-- **hasMany**:
-  ```prisma
-  posts Post[]
-  ```
+- **hasOne**: `profile Profile?`
+- **hasMany**: `posts Post[]`
 
----
-
-## Conversion Example
-
-### Input: `User.php` (Yii2)
-```php
-class User extends ActiveRecord {
-    public static function tableName() { return 'user'; }
-    public function rules() {
-        return [
-            [['username', 'email'], 'required'],
-            [['username', 'email'], 'unique'],
-        ];
-    }
-    public function getProfile() {
-        return $this->hasOne(Profile::class, ['user_id' => 'id']);
-    }
-}
-```
-
-### Output: `schema.prisma`
-```prisma
-model User {
-  id       Int      @id @default(autoincrement())
-  username String   @unique
-  email    String   @unique
-  profile  Profile?
-
-  @@map("user")
-}
-```
+See [examples.md](./resources/examples.md) for detailed transformation scenarios.

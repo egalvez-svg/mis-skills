@@ -9,6 +9,11 @@ Este repositorio contiene skills para extender las capacidades de agentes de IA 
 
 Transforma consultas de Yii2 Active Record y Query Builder a sintaxis de Prisma Client.
 
+### [yii2-model-to-prisma](./skills/yii2-model-to-prisma)
+**Autor: Eduardo Galvez**
+
+Transforma modelos ActiveRecord de Yii2 directamente a definiciones de esquemas de Prisma.
+
 ## Cómo Instalar
 
 Para instalar este skill en tu proyecto o editor, usa el CLI de `skills`:
