@@ -76,7 +76,7 @@ const results = await prisma.product.findMany({
     id: true,
     name: true,
     price: true,
-    category: true, // Assuming relation exists
+    category: true,
   },
   where: {
     category: {
